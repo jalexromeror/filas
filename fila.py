@@ -1,14 +1,15 @@
 import random as rd
 
+# espera = rd.randint(2, 3)
+# caja = rd.randint(4, 5)
 minutos = 15
-espera = rd.randint(2, 3)
-caja = rd.randint(4, 5)
-k = 0
 for minuto in range(minutos):
     espera = rd.randint(2, 3)
-    caja = rd.randint(4, 5)    
-    print('minuto = ' + str(minuto), end='')
-    print('\tk = ' + str(k), end='')
-    print('\tespera = ' + str(espera), end='')
-    print('\tcaja = ' + str(caja))
-    k += 1
+    caja = rd.randint(4, 5)
+    print('minuto = ' + str(minuto), end='')    
+    if (minuto >= 0) & (minuto <= espera):
+        print('\tespera = ' + str(espera), end='')
+        print('\tcaja = N/A')
+    else:
+        print('\tespera = N/A', end='')
+        print('\tcaja = ' + str(caja))
