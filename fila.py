@@ -9,18 +9,17 @@ def borrar_pantalla():
 
 def run():  
     borrar_pantalla()    
-    DIAS = 1
-    MINUTOS = 20
+    DIAS = 5
+    MINUTOS = 480
     espera = []    
     for dia in range(DIAS):
         k = 0
         caja = []
-        atencion = []
-        # espera.append(rd.randint(2, 3))
-        espera.append(3)
+        espera.append(rd.randint(7, 12))
+        # espera.append(3)
         for minuto in range(MINUTOS):
-            # caja.append(rd.randint(4, 5))
-            caja.append(5)
+            caja.append(rd.randint(10, 15))
+            # caja.append(5)
             print('dia = ' + str(dia), end='')
             print('\t min = ' + str(minuto), end='')
             while minuto == (espera[len(espera)-1] + k*caja[len(caja)-1]):
