@@ -1,12 +1,14 @@
 import os
 import random as rd
 
+# Función para borrar pantalla.
 def borrar_pantalla():
     comando = 'clear'
     if os.name in ('nt', 'dos'):
         comando = 'cls'
     os.system(comando)
 
+# Programa principal.
 def run():  
     borrar_pantalla()    
     DIAS = 5
@@ -27,5 +29,6 @@ def run():
                 k += 1                    
             print('')
 
+# Ejecición del programa.
 if __name__ == '__main__':    
     run()
