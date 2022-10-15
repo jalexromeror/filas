@@ -18,10 +18,8 @@ def run():
         k = 0
         caja = []
         espera.append(rd.randint(7, 12))
-        # espera.append(3)
         for minuto in range(MINUTOS):
             caja.append(rd.randint(10, 15))
-            # caja.append(5)
             print('dia = ' + str(dia), end='')
             print('\t min = ' + str(minuto), end='')
             while minuto == (espera[len(espera)-1] + k*caja[len(caja)-1]):
